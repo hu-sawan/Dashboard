@@ -157,6 +157,7 @@ aside li a:hover {
 }
 /* Header End */
 .page-title {
+    position: relative;
     margin: 20px 20px 40px;
 }
 .page-title::before,
@@ -525,3 +526,197 @@ aside li a:hover {
 }
 /* Project Table End */
 /* Content End */
+
+/* ===================================== New Page ===================================== */
+
+/* Settings Page Start */
+/* Control Box Start */
+.settings-page textarea {
+    height: 150px;
+}
+@media (max-width: 480px) {
+    .settings-page .control-box > div > div:first-child {
+        margin-right: 4px;
+    }
+}
+/* Control Box End */
+/* General Box Start */
+.general-box > div input[type="email"] {
+    display: inline-flex;
+    width: calc(100% - 80px);
+}
+/* General Box End */
+/* Social Info Box Start */
+.social-info-box > div i {
+    width: 40px;
+    height: 40px;
+    background-color: #f6f6f6;
+    border: 1px solid #ddd;
+    border-right: none;
+    font-size: 20px;
+    border-radius: 6px 0 0 6px;
+    transition: .3s;
+}
+.social-info-box > div input {
+    height: 40px;
+    background-color: #f6f6f6;
+    border: 1px solid #ddd;
+    border-radius: 0 6px 6px 0;
+}
+.social-info-box > div:focus-within i {
+    color: black;
+}
+/* Social Info Box End */
+/* Widgets Box Start */
+.widgets-box > div label {
+    padding-left: 30px;
+    position: relative;
+    cursor: pointer;
+}
+.widgets-box > div label::before,
+.widgets-box > div label::after {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -9px;
+    border-radius: 4px;
+    transition: .3s;
+}
+.widgets-box > div label::before {
+    content: "";
+    border: 2px solid var(--grey-color);
+    width: 14px;
+    height: 14px;
+}
+.widgets-box > div label:hover:before {
+    border-color: var(--blue-alt-color);
+}
+.widgets-box > div label::after {
+    font-family: var(--fa-style-family-classic);
+    content: "\f00c";
+    font-weight: 900;
+    font-size: 12px;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: var(--blue-color);
+    transform: scale(0) rotate(360deg);
+}
+.widgets-box > div input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+}
+.widgets-box > div input[type="checkbox"]:checked + label::after {
+    transform: scale(1) rotate(0);
+}
+/* Widgets Box End */
+/* Backup Box Start */
+.backup-box > .date label {
+    padding-left: 30px;
+    position: relative;
+    cursor: pointer;
+}
+.backup-box > .date label::before,
+.backup-box > .date label::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    transition: .3s;
+}
+.backup-box > .date label::before {
+    border: 2px solid var(--grey-color);
+    width: 18px;
+    height: 18px;
+    left: 0;
+    top: 50%;
+    margin-top: -11px;
+}
+.backup-box > .date label:hover:before {
+    border-color: var(--blue-alt-color);
+}
+.backup-box > .date label::after {
+    width: 14px;
+    height: 14px;
+    left: 4px;
+    top: 4px;
+    background-color: var(--blue-color);
+    transform: scale(0);
+}
+.backup-box > .date input[type="radio"]:checked + label::after {
+    transform: scale(1);
+}
+.backup-box > .date input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+}
+.backup-box .servers > div {
+    transition: .3s;
+}
+.backup-box .servers > input[type="radio"]:checked + div {
+    border-color: var(--blue-color);
+    color: var(--blue-color);
+}
+.backup-box .servers > input[type="radio"] {
+    -webkit-appearance: none;
+    appearance: none;
+}
+.backup-box .servers > div label {
+    cursor: pointer;
+}
+@media (max-width: 767px) {
+    .backup-box .servers {
+        flex-direction: column;
+    }
+    .backup-box .servers > input[type="radio"] {
+        position: absolute;
+    }
+    .backup-box .servers > div {
+        margin-bottom: 15px;
+    }
+}
+/* Backup Box End */
+/* CheckBox toggle Effect */
+.toggle-checkbox {
+    -webkit-appearance: none;
+    appearance: none;
+    position: absolute;
+}
+.toggle-switch {
+    background-color: #ccc;
+    width: 78px;
+    height: 32px;
+    border-radius: 16px;
+    position: relative;
+    transition: .3s;
+    cursor: pointer;
+}
+.toggle-switch::before {
+    font-family: var(--fa-style-family-classic);
+    content: '\f00d';
+    font-weight: 900;
+    background-color: white;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    border-radius: 50%;
+    top: 4px;
+    left: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aaa;
+    transition: .3s;
+}
+.toggle-checkbox:checked + .toggle-switch {
+    background-color: var(--blue-color);
+}
+.toggle-checkbox:checked + .toggle-switch::before {
+    content: '\f00c';
+    left: 50px;
+    color: var(--blue-color);
+}
+/* CheckBox toggle Effect */
+/* Settings Page End */

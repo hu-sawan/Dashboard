@@ -68,11 +68,17 @@
 .pb-20 {
     padding-bottom: 20px;
 }
+.pl-10 {
+    padding-left: 10px;
+}
 .pl-15 {
     padding-left: 15px;
 }
 .m-0 {
     margin: 0;
+}
+.m-15 {
+    margin: 15px;
 }
 .mt-0 {
     margin-top: 0;
@@ -98,11 +104,17 @@
 .mr-15 {
     margin-right: 15px;
 }
+.mb-0 {
+    margin-bottom: 0px;
+}
 .mb-5 {
     margin-bottom: 5px;
 }
 .mb-10 {
     margin-bottom: 10px;
+}
+.mb-15 {
+    margin-bottom: 15px;
 }
 .mb-20 {
     margin-bottom: 20px;
@@ -222,7 +234,17 @@
 .bb-eee {
     border-bottom: 1px solid #eee;
 }
+:disabled {
+    cursor: no-drop;
+    background-color: #f0f4f8;
+    color: #888;
+}
 /* End Colors */
+/* Start Input Styling */
+.resize-none {
+    resize: none;
+}
+/* End Input Styling */
 /* Start Components */
 .flex-between {
     display: flex;
@@ -247,6 +269,10 @@
 .box-title {
     margin-top: 0;
     margin-bottom: 20px;
+}
+.box-title-p {
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 .btn-padding {
     padding: 4px 10px;

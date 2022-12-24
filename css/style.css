@@ -37,10 +37,7 @@ ul {
 }
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
     font-weight: 600;
 }
 /* General Styling End */
@@ -536,7 +533,7 @@ aside li a:hover {
 /* Project Table End */
 /* Content End */
 
-/* ===================================== New Page ===================================== */
+/* ======================================== New Page ========================================= */
 
 /* Settings Page Start */
 /* Control Box Start */
@@ -688,6 +685,9 @@ aside li a:hover {
 }
 /* Backup Box End */
 /* Settings Page End */
+
+/* ======================================== New Page ========================================= */
+
 /* Profile Page Start */
 /* Overview Start */
 @media (max-width: 767px) {
@@ -795,6 +795,9 @@ aside li a:hover {
 }
 /* More Data End */
 /* Profile Page End */
+
+/* ======================================== New Page ========================================= */
+
 /* Projects Page Start */
 .projects-page {
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
@@ -884,12 +887,15 @@ aside li a:hover {
     }
 }
 /* Projects Page End */
+
+/* ======================================== New Page ========================================= */
+
 /* Course Page Start */
-.courses-page {
+.wrapper-300 {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 @media (max-width: 767px) {
-    .courses-page {
+    .wrapper-300 {
         grid-template-columns: minmax(200px, 1fr);
         margin-left: 10px;
         margin-right: 10px;
@@ -914,6 +920,37 @@ aside li a:hover {
     font-weight: 600;
 }
 /* Course Page End */
+
+/* ======================================== New Page ========================================= */
+
+/* Friends Page Start */
+.friends-page .box .contact {
+    top: 10px;
+    left: 10px;
+} 
+.friends-page .box .contact i {
+    color: #666;
+    cursor: pointer;
+    transition: .3s;
+}
+.friends-page .box .contact i:hover {
+    color: white;
+    background-color: var(--blue-color);
+}
+.friends-page .box .info img {
+    width: 100px;
+}
+.friends-page .box .icons .vip {
+    font-size: 42px;
+    right: 0;
+    bottom: 20px;
+    opacity: .4;
+    font-weight: 600;
+}
+/* Friends Page End */
+
+/* ======================================== New Page ========================================= */
+
 /* CheckBox toggle Effect */
 .toggle-checkbox {
     -webkit-appearance: none;

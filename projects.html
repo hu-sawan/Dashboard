@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome Library CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Customised Framework -->
+    <link rel="stylesheet" href="./css/framework.css">
+    <!-- CSS File -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Profile</title>
+</head>
+<body>
+    <div class="main-container d-flex">
+        <!-- Sidebar Start -->
+        <aside class="p-20 bg-white relative">
+            <h3 class="txt-c relative mt-0">S7S</h3>
+            <ul>
+                <li>
+                    <a href="./index.html" class="fs-14 d-flex txt-black align-c active p-10 r-6">
+                        <i class="fa-regular fa-chart-bar fa-fw"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./settings.html" class="p-10 txt-black d-flex r-6 align-c">
+                        <i class="fa-solid fa-gear fa-fw"></i>
+                        <span>Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./profile.html" class="p-10 txt-black d-flex r-6 align-c">
+                        <i class="fa-regular fa-user fa-fw"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./projects.html" class="p-10 txt-black d-flex r-6 align-c">
+                        <i class="fa-solid fa-diagram-project fa-fw"></i>
+                        <span>Projects</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./courses.html" class="p-10 txt-black d-flex r-6 align-c">
+                        <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                        <span>Courses</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./friends.html" class="p-10 txt-black d-flex r-6 align-c">
+                        <i class="fa-regular fa-circle-user fa-fw"></i>
+                        <span>Friends</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./files.html" class="p-10 txt-black d-flex r-6 align-c">
+                        <i class="fa-regular fa-file fa-fw"></i>
+                        <span>Files</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="./plans.html" class="p-10 txt-black d-flex r-6 align-c">
+                        <i class="fa-regular fa-credit-card fa-fw"></i>
+                        <span>Plans</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <!-- Sidebar End -->
+        <!-- Content Section Start -->
+        <div class="content hidden w-100">
+            <!-- Header Start -->
+            <div class="header p-15 flex-between bg-white">
+                <div class="search relative">
+                    <input class="r-10 p-10 b-ccc" type="search" placeholder="Type a keywoard">
+                </div>
+                <div class="icons d-flex align-c">
+                    <span class="notifications relative">
+                        <i class="fa-regular fa-bell fa-fw"></i>
+                    </span>
+                    <img class="round" src="./images/avatar.webp" alt="avatar">
+                </div>
+            </div>
+            <!-- Header End -->
+            <h1 class="page-title">Projects</h1>
+            <div class="m-20 d-grid gap-20 projects-page">
+                <div class="p-20 r-10 bg-white hidden relative project-details">
+                    <span class="absolute fs-13 txt-grey">12/1/2023</span>
+                    <h4 class="m-0">Dashboard</h4>
+                    <p class="mt-10 mb-10 fs-14">Elzero Dashboard Project Design And Programming And Hosting</p>
+                    <div class="relative team">
+                        <a href="#">
+                            <img class="round" src="./images/team-03.png" alt="person profile picture">
+                        </a>
+                        <a href="#">
+                            <img class="round" src="./images/team-02.png" alt="person profile picture">
+                        </a>
+                        <a href="#">
+                            <img class="round" src="./images/team-01.png" alt="person profile picture">
+                        </a>
+                        <a href="#">
+                            <img class="round" src="./images/team-04.png" alt="person profile picture">
+                        </a>
+                    </div>
+                    <div class="pt-15 mt-15 bt-eee d-flex justify-end techs">
+                        <span class="btn-padding bg-eee fs-13 txt-black r-6">Prgramming</span>
+                        <span class="btn-padding bg-eee fs-13 txt-black r-6 ml-5">Design</span>
+                        <span class="btn-padding bg-eee fs-13 txt-black r-6 ml-5">Hosting</span>
+                        <span class="btn-padding bg-eee fs-13 txt-black r-6 ml-5">Marketing</span>
+                    </div>
+                    <div class="pt-15 mt-15 bt-eee d-flex flex-between">
+                        <div class="bg-eee progress relative r-6">
+                            <span class="bg-orange absolute r-6" style="width: 90%;"></span>
+                        </div>
+                        <div class="fs-14 txt-grey price">
+                            <i class="fa-solid fa-dollar-sign"></i>
+                            <span>50</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-20 r-10 bg-white hidden relative project-details">
+                    <span class="absolute fs-13 txt-grey">14/2/2023</span>
+                    <h4 class="m-0">Academy Portal</h4>
+                    <p class="mt-10 mb-10 fs-14">Academy Portal Project Design And Programming</p>
+                    <div class="relative team">
+                        <a href="#">
+                            <img class="round" src="./images/team-03.png" alt="person profile picture">
+                        </a>
+                        <a href="#">
+                            <img class="round" src="./images/team-01.png" alt="person profile picture">
+                        </a>
+                        <a href="#">
+                            <img class="round" src="./images/team-02.png" alt="person profile picture">
+                        </a>
+                    </div>
+                    <div class="pt-15 mt-15 bt-eee d-flex justify-end techs">
+                        <span class="btn-padding bg-eee fs-13 txt-black r-6">Prgramming</span>
+                        <span class="btn-padding bg-eee fs-13 txt-black r-6 ml-5">Design</span>
+                    </div>
+                    <div class="pt-15 mt-15 bt-eee d-flex flex-between">
+                        <div class="bg-eee progress relative r-6">
+                            <span class="bg-green absolute r-6" style="width: 20%;"></span>
+                        </div>
+                        <div class="fs-14 txt-grey price">
+                            <i class="fa-solid fa-dollar-sign"></i>
+                            <span>150</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-20 r-10 bg-white hidden relative project-details">
+                    <span class="absolute fs-13 txt-grey">1/3/2023</span>
+                    <h4 class="m-0">Chatting Application</h4>
+                    <p class="mt-10 mb-10 fs-14">Chatting Application Project Design</p>
+                    <div class="relative team">
+                        <a href="#">
+                            <img class="round" src="./images/team-01.png" alt="person profile picture">
+                        </a>
+                        <a href="#">
+                            <img class="round" src="./images/team-03.png" alt="person profile picture">
+                        </a>
+                    </div>
+                    <div class="pt-15 mt-15 bt-eee d-flex justify-end techs">
+                        <span class="btn-padding bg-eee fs-13 txt-black r-6">Design</span>
+                    </div>
+                    <div class="pt-15 mt-15 bt-eee d-flex flex-between">
+                        <div class="bg-eee progress relative r-6">
+                            <span class="bg-orange absolute r-6" style="width: 40%;"></span>
+                        </div>
+                        <div class="fs-14 txt-grey price">
+                            <i class="fa-solid fa-dollar-sign"></i>
+                            <span>40</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-20 r-10 bg-white hidden relative project-details">
+                    <span class="absolute fs-13 txt-grey">1/4/2023</span>
+                    <h4 class="m-0">Naser Dashboard</h4>
+                    <p class="mt-10 mb-10 fs-14">Ahmed Dashboard Project Design And Programming And Hosting</p>
+                    <div class="relative team">
+                        <a href="#">
+                            <img class="round" src="./images/team-01.png" alt="person profile picture">
+                        </a>
+                        <a href="#">
+                            <img class="round" src="./images/team-04.png" alt="person profile picture">
+                        </a>
+                        <a href="#">
+                            <img class="round" src="./images/team-02.png" alt="person profile picture">
+                        </a>
+                        <a href="#">
+                            <img class="round" src="./images/team-03.png" alt="person profile picture">
+                        </a>
+                    </div>
+                    <div class="pt-15 mt-15 bt-eee d-flex justify-end techs">
+                        <span class="btn-padding bg-eee fs-13 txt-black r-6 ">Programming</span>
+                        <span class="btn-padding bg-eee fs-13 txt-black r-6 ml-5">Data Analysis</span>
+                        <span class="btn-padding bg-eee fs-13 txt-black r-6 ml-5">Design</span>
+                    </div>
+                    <div class="pt-15 mt-15 bt-eee d-flex flex-between">
+                        <div class="bg-eee progress relative r-6">
+                            <span class="bg-red absolute r-6" style="width: 64%;"></span>
+                        </div>
+                        <div class="fs-14 txt-grey price">
+                            <i class="fa-solid fa-dollar-sign"></i>
+                            <span>190</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-20 r-10 bg-white hidden relative project-details">
+                    <span class="absolute fs-13 txt-grey">15/5/2023</span>
+                    <h4 class="m-0">Maliks Application</h4>
+                    <p class="mt-10 mb-10 fs-14">Mohamed Application Building And Design</p>
+                    <div class="relative team">
+                        <a href="#">
+                            <img class="round" src="./images/team-01.png" alt="person profile picture">
+                        </a>
+                        <a href="#">
+                            <img class="round" src="./images/team-05.png" alt="person profile picture">
+                        </a>
+                        <a href="#">
+                            <img class="round" src="./images/team-02.png" alt="person profile picture">
+                        </a>
+                        <a href="#">
+                            <img class="round" src="./images/team-03.png" alt="person profile picture">
+                        </a>
+                        <a href="#">
+                            <img class="round" src="./images/team-04.png" alt="person profile picture">
+                        </a>
+                    </div>
+                    <div class="pt-15 mt-15 bt-eee d-flex justify-end techs">
+                        <span class="btn-padding bg-eee fs-13 txt-black r-6 ">Programminh</span>
+                        <span class="btn-padding bg-eee fs-13 txt-black r-6 ml-5">Data Analysis</span>
+                        <span class="btn-padding bg-eee fs-13 txt-black r-6 ml-5">Marketing</span>
+                        <span class="btn-padding bg-eee fs-13 txt-black r-6 ml-5">Design</span>
+                    </div>
+                    <div class="pt-15 mt-15 bt-eee d-flex flex-between">
+                        <div class="bg-eee progress relative r-6">
+                            <span class="bg-orange absolute r-6" style="width: 80%;"></span>
+                        </div>
+                        <div class="fs-14 txt-grey price">
+                            <i class="fa-solid fa-dollar-sign"></i>
+                            <span>450</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-20 r-10 bg-white hidden relative project-details">
+                    <span class="absolute fs-13 txt-grey">23/7/2023</span>
+                    <h4 class="m-0">Online Store</h4>
+                    <p class="mt-10 mb-10 fs-14">Online Store On Shopify</p>
+                    <div class="relative team">
+                        <a href="#">
+                            <img class="round" src="./images/team-01.png" alt="person profile picture">
+                        </a>
+                        <a href="#">
+                            <img class="round" src="./images/team-02.png" alt="person profile picture">
+                        </a>
+                        <a href="#">
+                            <img class="round" src="./images/team-04.png" alt="person profile picture">
+                        </a>
+                        <a href="#">
+                            <img class="round" src="./images/team-03.png" alt="person profile picture">
+                        </a>
+                    </div>
+                    <div class="pt-15 mt-15 bt-eee d-flex justify-end techs">
+                        <span class="btn-padding bg-eee fs-13 txt-black r-6">Prgramming</span>
+                        <span class="btn-padding bg-eee fs-13 txt-black r-6 ml-5">Design</span>
+                        <span class="btn-padding bg-eee fs-13 txt-black r-6 ml-5">Hosting</span>
+                        <span class="btn-padding bg-eee fs-13 txt-black r-6 ml-5">Marketing</span>
+                    </div>
+                    <div class="pt-15 mt-15 bt-eee d-flex flex-between">
+                        <div class="bg-eee progress relative r-6">
+                            <span class="bg-blue absolute r-6" style="width: 90%;"></span>
+                        </div>
+                        <div class="fs-14 txt-grey price">
+                            <i class="fa-solid fa-dollar-sign"></i>
+                            <span>190</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Content Section End -->
+    </div>
+</body>
+</html>

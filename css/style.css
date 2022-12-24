@@ -35,6 +35,14 @@ body {
 ul {
     padding: 0;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+}
 /* General Styling End */
 .main-container {
     background-color: #f1f5f9;
@@ -158,6 +166,7 @@ aside li a:hover {
 /* Header End */
 .page-title {
     position: relative;
+    font-weight: 600;
     margin: 20px 20px 40px;
 }
 .page-title::before,
@@ -679,7 +688,7 @@ aside li a:hover {
 }
 /* Backup Box End */
 /* Settings Page End */
-/* Profile Box Start */
+/* Profile Page Start */
 /* Overview Start */
 @media (max-width: 767px) {
     .profile-page .overview {
@@ -785,7 +794,91 @@ aside li a:hover {
     }
 }
 /* More Data End */
-/* Profile Box End */
+/* Profile Page End */
+/* Projects Page Start */
+.projects-page {
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+.projects-page .project-details > span {
+    top: 10px;
+    right: 10px;
+    font-weight: 500s;
+}
+.projects-page .project-details .team {
+    min-height: 80px;
+}
+.projects-page .project-details .team a {
+    position: absolute;
+    bottom: 0;
+}
+.projects-page .project-details .team a:first-child {
+    left: 0;
+}
+.projects-page .project-details .team a:nth-child(2) {
+    left: 25px;
+}
+.projects-page .project-details .team a:nth-child(3) {
+    left: 50px;
+}
+.projects-page .project-details .team a:nth-child(4) {
+    left: 75px;
+}
+.projects-page .project-details .team a:nth-child(5) {
+    left: 100px;
+}
+.projects-page .project-details .team a:nth-child(6) {
+    left: 125px;
+}
+.projects-page .project-details .team a img {
+    width: 40px;
+    border: 2px solid white;
+}
+.projects-page .project-details div:last-child .progress {
+    width: 260px;
+}
+.projects-page .project-details div:last-child .progress span {
+    left: 0;
+    bottom: 0;
+}
+.projects-page .project-details div:last-child .progress,
+.projects-page .project-details div:last-child .progress span {
+    height: 8px;
+}
+.projects-page .project-details div:last-child .price span {
+    font-weight: 600;
+}
+@media (max-width: 1023px) {
+    .projects-page {
+        grid-template-columns: minmax(200px, 1fr);
+    }
+    .projects-page .project-details div:last-child {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .projects-page .project-details > .techs {
+        justify-content: center;
+    }
+    .projects-page .project-details div:last-child .price {
+        margin-top: 10px;
+    }
+}
+@media (max-width: 518px) {
+    .projects-page .project-details > .techs {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .projects-page .project-details .techs span {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 434px) {
+    .projects-page .project-details div:last-child .progress {
+        width: 120px;
+    }
+}
+/* Projects Page End */
 /* CheckBox toggle Effect */
 .toggle-checkbox {
     -webkit-appearance: none;

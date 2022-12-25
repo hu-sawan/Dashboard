@@ -972,9 +972,10 @@ aside li a:hover {
 }
 .files-page .statistics .upload {
     padding: 10px 15px;
-    display: block;
-    width: fit-content;
     margin: 15px auto 0;
+}
+.files-page .statistics .upload:hover {
+    background-color: var(--blue-alt-color);
 }
 .files-page .statistics .upload:hover i {
     animation: up-down .8s infinite ease-in-out alternate;
@@ -990,17 +991,17 @@ aside li a:hover {
 .wrapper-200 {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
-@media (max-width: 893px) {
+@media (max-width: 767px) {
+    .files-page {
+        flex-direction: column;
+        align-items: normal;
+    }
     .wrapper-200 {
         grid-template-columns: minmax(200px, 1fr);
         gap: 10px;
     }
-    .files-page {
-        display: grid;
-        grid-template-columns: minmax(200px, 1fr);
-        gap: 10px;
-        margin-left: 10px;
-        margin-right: 10px;
+    .files-page .statistics {
+        min-width: 0;
     }
 }
 .files-page .files  {
@@ -1015,6 +1016,109 @@ aside li a:hover {
     transform: rotate(5deg);
 }
 /* Files Page End */
+
+/* ======================================== New Page ========================================= */
+
+/* Plans Page Start */
+.plans-page .label {
+    border: 3px solid white;
+}
+.plans-page .blue {
+    background-color: var(--blue-color);
+}
+.plans-page .green {
+    background-color: var(--green-color);
+}
+.plans-page .orange {
+    background-color: var(--orange-color);
+}
+.plans-page .label.blue {
+    outline: 3px solid var(--blue-color);
+}
+.plans-page .label.green {
+    outline: 3px solid var(--green-color);
+}
+.plans-page .label.orange {
+    outline: 3px solid var(--orange-color);
+}
+.plans-page .label .price {
+    font-size: 40px;
+    margin: auto;
+}
+.plans-page .label .price i {
+    font-size: 25px;
+    left: -20px;
+}
+.plans-page .plan-box ul li i:first-child {
+    font-size: 18px;
+}
+.plans-page .plan-box ul li i:last-child {
+    margin-left: auto;
+    cursor: pointer;
+}
+.plans-page .plan-box a {
+    margin: auto;
+}
+@media (max-width: 1187px) {
+    .plans-page .plan-box a {
+        padding: 4px 100px;
+    }
+}
+@media (max-width: 400px) {
+    .plans-page .plan-box a {
+        padding: 4px 10px;
+    }
+    .plans-page .plan-box ul li span {
+        font-size: 12px;
+    }
+}
+.ribbon {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    right: -7px;
+    top: -7px;
+    z-index: 1;
+}
+.ribbon span {
+    color: white;
+    background-color: var(--orange-color);
+    line-height: 20px;
+    width: 160px;
+    display: block;
+    text-align: center;
+    position: absolute;
+    transform: rotate(45deg);
+    right: -41px;
+    top: 25px;
+    font-weight: 600;
+    padding: 3px 0;
+    box-shadow: 0 3px 10px -5px black;
+}
+.ribbon span::before {
+    content: "";
+    position: absolute;
+    border-top: 7px solid var(--orange-color);
+    border-right: 7px solid var(--orange-color);
+    border-left: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    top: 25px;
+    left: 136px;
+    z-index: -1;
+}
+.ribbon span::after {
+    content: "";
+    position: absolute;
+    border-top: 7px solid var(--orange-color);
+    border-right: 7px solid transparent;
+    border-left: 7px solid var(--orange-color);
+    border-bottom: 7px solid transparent;
+    top: 25px;
+    left: 12px;
+    z-index: -1;
+}
+/* Plans Page End */
 /* CheckBox toggle Effect */
 .toggle-checkbox {
     -webkit-appearance: none;

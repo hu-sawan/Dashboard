@@ -1083,16 +1083,16 @@ aside li a:hover {
     margin-left: auto;
     cursor: pointer;
 }
-.plans-page .plan-box a {
+.plans-page .plan-box .plan-btn {
     margin: auto;
 }
 @media (max-width: 1187px) {
-    .plans-page .plan-box a {
+    .plans-page .plan-box .plan-btn {
         padding: 4px 100px;
     }
 }
 @media (max-width: 400px) {
-    .plans-page .plan-box a {
+    .plans-page .plan-box .plan-btn {
         padding: 4px 10px;
     }
     .plans-page .plan-box ul li span {

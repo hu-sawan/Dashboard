@@ -10,17 +10,15 @@ import Friends from "./scenes/friends/Friends";
 import Files from "./scenes/files/Files";
 import Courses from "./scenes/courses/Courses";
 import Subscription from "./scenes/subscription/Subscription";
+import Login from "./scenes/login/Login";
 
 function App() {
     return (
         <>
             <BrowserRouter>
                 <Routes>
+                    <Route path="/" element={<Login />}></Route>
                     <Route element={<Layout />}>
-                        <Route
-                            path="/"
-                            element={<Navigate to="/dashboard" replace />}
-                        ></Route>
                         <Route
                             path="/dashboard"
                             element={<Dashboard />}

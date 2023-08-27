@@ -1,13 +1,19 @@
 import "./style.css";
 import React from "react";
 
-const Switcher = () => {
+const Switcher = ({ setActive }) => {
     return (
         <div className="switcher">
-            <span className="signup active" onClick={console.log("clicked")}>
+            <span
+                className="signup active"
+                onClick={(e) => setActive(e.target)}
+            >
                 signup
             </span>
-            <span className="login swipe-left" onClick={console.log("clicked")}>
+            <span
+                className="login swipe-left"
+                onClick={(e) => setActive(e.target)}
+            >
                 login
             </span>
         </div>
@@ -25,7 +31,7 @@ const ResponseArea = () => {
     );
 };
 
-const SignupForm = () => {
+const SignupForm = ({ setActive }) => {
     return (
         <form action="post" className="signup-form active">
             <div className="info">
@@ -80,7 +86,7 @@ const SignupForm = () => {
                 </div>
             </div>
             <div className="others">
-                <span onClick={console.log("clicked")} className="toLogin">
+                <span className="toLogin" onClick={(e) => setActive(e.target)}>
                     Already have an account?
                 </span>
                 <input type="submit" defaultValue="signup" id="signup-btn" />
@@ -122,13 +128,62 @@ const LoginForm = () => {
 };
 
 const Login = () => {
+    const handleActive = (target) => {
+        const navElements = document.querySelectorAll(".switcher span"),
+            signupForm = document.querySelector(".signup-form"),
+            loginForm = document.querySelector(".login-form"),
+            formsWrapper = document.querySelector(".forms-wrapper"),
+            signupSpan = document.querySelector("span.signup"),
+            loginSpan = document.querySelector("span.login");
+
+        navElements.forEach((ele) => ele.classList.remove("active"));
+
+        // Checks if the clicked element is the toLogin navigator and activate the login switcher element
+        if (target.classList.contains("toLogin")) {
+            loginSpan.classList.add("active");
+        } else {
+            target.classList.add("active");
+        }
+
+        // Activates the form based on the clicked element
+        if (
+            target.classList.contains("signup") &&
+            !target.classList.contains("toLogin")
+        ) {
+            if (!signupForm.classList.contains("active")) {
+                // Added swipe animation
+                formsWrapper.classList.remove("swipe-right");
+                formsWrapper.classList.add("swipe-left");
+            }
+            signupForm.classList.add("active");
+            loginForm.classList.remove("active");
+
+            // Added swipe transition
+            loginSpan.classList.add("swipe-left");
+            signupSpan.classList.remove("swipe-right");
+        } else {
+            if (!loginForm.classList.contains("active")) {
+                // Added swipe animation
+                formsWrapper.classList.remove("swipe-left");
+                formsWrapper.classList.add("swipe-right");
+            }
+
+            loginForm.classList.add("active");
+            signupForm.classList.remove("active");
+
+            // Added swipe transition
+            loginSpan.classList.remove("swipe-left");
+            signupSpan.classList.add("swipe-right");
+        }
+    };
+
     return (
         <div className="main-wrapper">
             <div className="wrapper">
-                <Switcher />
+                <Switcher setActive={handleActive} />
                 <ResponseArea />
                 <div className="forms-wrapper">
-                    <SignupForm />
+                    <SignupForm setActive={handleActive} />
                     <LoginForm />
                 </div>
             </div>
